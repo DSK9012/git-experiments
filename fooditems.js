@@ -1,4 +1,6 @@
-const express=require("express");
+
+
+const express = require("express");
 const router=express.Router();
 const auth=require("../middleware/authToken");
 
@@ -16,9 +18,7 @@ router.get("/Home", async (req, res)=>{
     }
 });
 
-// @route GET /Home/:availablefor
-// @desc Get specific items
-// @access Private
+
 router.get("/Home/:availablefor", auth, async (req, res)=>{
     try{
         var items=await Item.find({availablefor:req.params.availablefor});
