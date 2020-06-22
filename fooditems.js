@@ -4,9 +4,7 @@ const auth=require("../middleware/authToken");
 
 const Item=require("../models/foodItemModel");
 
-// @route GET /Home
-// @desc Get all food items
-// @access Public
+
 router.get("/Home", async (req, res)=>{
     try{
         var items=await Item.find();throw error;
