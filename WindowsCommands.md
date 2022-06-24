@@ -15,4 +15,4 @@
 |move <folder-name/file-name> <folder-name/file-name>      | To move file to a folder / folder to a folder|
 
 **References** :
-* [Microsoft Windows Commands](https:|docs.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands)|
+* [Microsoft Windows Commands](https:|docs.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands)
