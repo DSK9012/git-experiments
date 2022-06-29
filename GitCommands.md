@@ -33,6 +33,6 @@
 |**Undo Staged Changes**|
 |git restore --staged file_name or git restore --staged . or git reset file_name or git reset .|Undo the changes from staging area, but changes wont be removed from WD|
 |**Undo Commits**|
-|git reset HEAD~1|Go back to previous commit|
-|git reset --soft HEAD~1|Go back to previous commit|
-|git reset --hard HEAD~1|Go back to previous commit|
+|git reset HEAD~1|Go back to previous commit and undo the changes from staging area|
+|git reset --soft HEAD~1|Go back to previous commit and keep the changes in staging area|
+|git reset --hard HEAD~1|Go back to previous commit and remove changes in WD|
