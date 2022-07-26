@@ -8,7 +8,7 @@
 |D:                                                        | To change drive|
 |mkdir <folder-name>                                       | To create a directory/folder|
 |rmdir <folder-name>                                       | To delete a directory/folder|
-|echo <file-content> > <file-name>                         | To create a file with content|
+|echo <file-data> > <file-name>                         | To create a file with content|
 |type <file-name>                                          | To open a file in cmd|
 |del <file-name>                                           | To delete a file|
 |copy <folder-name/file-name> <folder-name/file-name>      | To copy a file to file / files from folder to folder|
