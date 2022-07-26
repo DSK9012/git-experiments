@@ -37,7 +37,7 @@
 |git reset --soft HEAD~1|Go back to previous commit and keep the changes in staging area|
 |git reset --hard HEAD~1|Go back to previous commit and remove changes in WD|
 |**STASH CHANGES**|
-|git stash|Remove and store the changes of tracked files in a seprate memory, available for 30 days|
+|git stash|Remove and store the changes of tracked files in a seprate memory|
 |git stash push -m <stash_name>|Stash changes with a message|
 |git stash list|List all the stash changes|
 |git stash apply or git stash apply <stash_index>|It will restore those changes to WD|
