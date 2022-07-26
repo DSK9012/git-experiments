@@ -1,1 +1,2 @@
-sample m1 first text
+sample m1 first text 
+rebasing
