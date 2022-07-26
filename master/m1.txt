@@ -1,2 +1,2 @@
 sample m1 first text 
-rebasing  conflicts
+rebasing  conflicts1
