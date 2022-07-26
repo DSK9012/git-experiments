@@ -36,3 +36,24 @@
 |git reset HEAD~1|Go back to previous commit and undo the changes from staging area|
 |git reset --soft HEAD~1|Go back to previous commit and keep the changes in staging area|
 |git reset --hard HEAD~1|Go back to previous commit and remove changes in WD|
+|**STASH CHANGES**|
+|git stash|Remove and store the changes of tracked files in a seprate memory|
+|git stash push -m <stash_name>|Stash changes with a message|
+|git stash list|List all the stash changes|
+|git stash apply or git stash apply <stash_index>|It will restore those changes to WD|
+|git stash pop or git stash pop <stash_index>|It will restore those changes and remove the stash|
+|git stash drop or git stash drop <stash_index>|It will remove the stash in memory|
+|git stash clear|It will remove all stored stashes from memory|
+|**REFLOG (BRING BACK DELETED COMMITS OR BRANCH CHANGES)**|
+|git reflog|It will display all the commits in all branches like a log|
+|git reset --hard <deleted_commit_id_from_reflog_log>|It will move the HEAD to last deleted commit|
+|git checkout <deleted_branch_commit_id_from_reflog_log>|It will create a detached-HEAD mode as usual|
+|**MERGING**|
+|git merge <branch_name>|It will pull the commits from other branch to existing|
+|**FAST-FORWARD MERGING**|
+|git merge <branch_name>|FF merging occurs by default when there is no new commits in master branch(from the one we are running this merge command) after switched to a new feature branch, i.e It will just move the new feature branch commits to master branch on top of master branch old commits.(Indirectly it will just move the master HEAD to latest commit)|
+|git merge --squash <branch_name>|Following the FF merge, It won't just move all new commits directly, instead it will combine all new commits in feature branch and move those combined changes to staged area in master branch, afterwards we can commit them as a single commit on top of master old commits|
+|git merge --no-ff <branch_name>|We can explictly override FF merging with --no-ff flag to follow recursive or non FF merging strategy. It will move new feature branch commits to master and in addition it will create a new commit on top of latest commit from feature branch in master branch which is not recommended in my perspective.|
+|**NON-FAST-FORWARD MERGING(RECURSIVE)**|
+|git merge <branch_name>|Non-FF merging occurs by default when there are some new commits in master branch(from the one we are running this merge command) after switched to a new feature branch. i.e It will move all the new commits from feature branch to master branch and its order is based on the time commits got created. In addition to these it wil create a new commit on top of all latest commits combining both branches.|
+|git merge --squash <branch_name>|Following the Non-FF merging, It won't directly move new commits of feature branch to master, instead it will combine all new commits from feature branch and move those combined changes to staging area of master branch. Afterwards we can commit the changes as usual and this commit will get created on top of the latest commits created in master branch.|
