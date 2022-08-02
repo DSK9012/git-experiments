@@ -76,4 +76,4 @@
 
 
 # Git Quick Setup from GitHub
-![ GitHub Quick Setup ](/GitHub_Quick_Setup.jpg)
+![ GitHub Quick Setup ](/github-quick-setup.jpg)
