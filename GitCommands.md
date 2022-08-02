@@ -73,3 +73,7 @@
 |git show <tag_name>|It will show us the commit details.|
 |git tag -a <tag_name> -m "<message>" <commit_id>|It will create annotated tag with more info like created user etc. Typically we use this most.|
 |git tag -d <tag_name>|It will delete the tag.|
+
+
+# Git Quick Setup from GitHub
+![ GitHub Quick Setup ](/GitHub_Quick_Setup.jpg)
