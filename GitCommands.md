@@ -94,7 +94,7 @@
 |git pull <origin_name> <remote_branch_name>|For local branch without setting upstream, when we want to pull our changes from remote branch, we should provide both origin_name and remote_branch_name explicitly. Everytime git pull performs two commands internlly, which are git fetch and git merge, fetching the changes from remote_repo and merging them into current_branch repectively.|
 |git branch --track <remote_branch_name> <remote_tracking_branch_name>|Create a local tracking branch manually, which is a local copy of remote_tracking_branch and directly linked to it. Here when pulling and pushing the code, we don't need to mention the origin_name and remote_branch_name explicitly.|
 |**Upstream**|
-|git push/pull -u/-up-stream <origin_name> <remote_branch_name>|Upstream is nothing about creation of local_tracking_branch implicitly when pulling/pushing the code. So later onwards, we don't need to mention the origin_name and remote_branch_name explicitly.|
+|git push/pull -u/-set-upstream <origin_name> <remote_branch_name>|Upstream is nothing about creation of local_tracking_branch implicitly when pulling/pushing the code. So later onwards, we don't need to mention the origin_name and remote_branch_name explicitly.|
 |**Deleting Remote Branches and Commits**|
 |git branch --delete --remotes <remote_branch_name>|Deletet remote_tracking_branch.|
 |git push <origin_name> --delete <remote_branch_name>|It will delete the remote_branch and also the remote_tracking, local_tracking and local branch in our disk. You know there is no meaning in keeping the remote_tracking_branch when the remote_branch itself is deleted.|
