@@ -87,9 +87,11 @@
 |git remote|Show the remote origin name.|
 |git remote show <origin_name>|List all the details about remote origin. Here origin_name can be anything, but we mostly use origin.|
 |git remote add <origin_name> <remote_repo_URL>|Add the remote(GitHub) repo into the local repo to create a connection. Again, origin_name can be anything, but we mostly use origin.|
+|git fetch||
+|git fetch <origin_name>||
 |**Pushing/Pulling** (For local branch and local tracking branches)|
 |git push <origin_name> <remote_branch_name>|For local branch without setting upstream, when we want to push our changes to remote branch, we should provide both origin_name and remote_branch_name explicitly.|
-|git pull <origin_name> <remote_branch_name>|For local branch without setting upstream, when we want to pull our changes from remote branch, we should provide both origin_name and remote_branch_name explicitly.|
+|git pull <origin_name> <remote_branch_name>|For local branch without setting upstream, when we want to pull our changes from remote branch, we should provide both origin_name and remote_branch_name explicitly. Everytime git pull performs two commands internlly, which are git fetch and git merge, fetching the changes from remote_repo and merging them into current_branch repectively.|
 |git branch --track <remote_branch_name> <remote_tracking_branch_name>|Create a local tracking branch manually, which is a local copy of remote_tracking_branch and directly linked to it. Here when pulling and pushing the code, we don't need to mention the origin_name and remote_branch_name explicitly.|
 |**Upstream**|
 |git push/pull -u/-up-stream <origin_name> <remote_branch_name>|Upstream is nothing about creation of local_tracking_branch implicitly when pulling/pushing the code. So later onwards, we don't need to mention the origin_name and remote_branch_name explicitly.|
