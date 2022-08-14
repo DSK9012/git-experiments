@@ -96,8 +96,8 @@
 |**Upstream**|
 |git push/pull -u/-set-upstream <origin_name> <remote_branch_name>|Upstream is nothing about creation of local_tracking_branch implicitly when pulling/pushing the code. So later onwards, we don't need to mention the origin_name and remote_branch_name explicitly.|
 |**Deleting Remote Branches and Commits**|
-|git branch --delete --remotes <remote_branch_name>|Deletet remote_tracking_branch.|
-|git push <origin_name> --delete <remote_branch_name>|It will delete the remote_branch and also the remote_tracking, local_tracking and local branch in our disk. You know there is no meaning in keeping the remote_tracking_branch when the remote_branch itself is deleted.|
+|git branch --delete --remotes <remote_branch_name>|Delete remote_tracking_branch.|
+|git push <origin_name> --delete <remote_branch_name>|It will delete the remote_branch and also the remote_tracking_branch in our disk. You know there is no meaning in keeping the remote_tracking_branch when the remote_branch itself is deleted.|
 
 # Git Quick Setup from GitHub
 ![ GitHub Quick Setup ](/git-quick-setup.JPG)
