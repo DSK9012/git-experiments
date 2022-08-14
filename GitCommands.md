@@ -87,8 +87,8 @@
 |git remote|Show the remote origin name.|
 |git remote show <origin_name>|List all the details about remote origin. Here origin_name can be anything, but we mostly use origin.|
 |git remote add <origin_name> <remote_repo_URL>|Add the remote(GitHub) repo into the local repo to create a connection. Again, origin_name can be anything, but we mostly use origin.|
-|git fetch|It will fetch all the newly created remote_branches and their changes. And It will create a remote_tracking_branches for them.|
-|git fetch <origin_name>||
+|git fetch / git fetch <origin_name>|It will fetch all the newly created remote_branches and their changes. And It will create a remote_tracking_branches for them.|
+|git fetch <origin_name> <branch_name>|It will fetch only the mentioned branch changes into remote_tracking_branch.|
 |**Pushing/Pulling** (For local branch and local tracking branches)|
 |git push <origin_name> <remote_branch_name>|For local branch without setting upstream, when we want to push our changes to remote branch, we should provide both origin_name and remote_branch_name explicitly.|
 |git pull <origin_name> <remote_branch_name>|For local branch without setting upstream, when we want to pull our changes from remote branch, we should provide both origin_name and remote_branch_name explicitly. Everytime git pull performs two commands internlly, which are git fetch and git merge, fetching the changes from remote_repo and merging them into current_branch repectively.|
