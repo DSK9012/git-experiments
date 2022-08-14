@@ -74,6 +74,28 @@
 |git tag -a <tag_name> -m "<message>" <commit_id>|It will create annotated tag with more info like created user etc. Typically we use this most.|
 |git tag -d <tag_name>|It will delete the tag.|
 
+# Remote Repo Commands (Flow: local_branch/local_tracking_branch---->remote_tracking_branch---->remote_branch)
+|Command|Description|
+|-|-|
+|**Basic Commands**|
+|git clone <remote_repo_URL>|Clone the remote repo into local disk.|
+|git branch|List all local branches.|
+|git branch -a|List all local and remote branches, which includes local, local tracking and remote tracking branches only.|
+|git branch -r|List all remote tracking branches only.|
+|git ls-remote|List all remote origin branches only.|
+|git branch -vv|List all local and local tracking branches only. Here we can find the what are local and local tracking branches.|
+|git remote|Show the remote origin name.|
+|git remote show <origin_name>|List all the details about remote origin. Here origin_name can be anything, but we mostly use origin.|
+|git remote add <origin_name> <remote_repo_URL>|Add the remote(GitHub) repo into the local repo to create a connection. Again, origin_name can be anything, but we mostly use origin.|
+|**Pushing/Pulling** (For local branch and local tracking branches)|
+|git push <origin_name> <remote_branch_name>|For local branch without setting upstream, when we want to push our changes to remote branch, we should provide both origin_name and remote_branch_name explicitly.|
+|git pull <origin_name> <remote_branch_name>|For local branch without setting upstream, when we want to pull our changes from remote branch, we should provide both origin_name and remote_branch_name explicitly.|
+|git branch --track <remote_branch_name> <remote_tracking_branch_name>|Create a local tracking branch manually, which is a local copy of remote_tracking_branch and directly linked to it. Here when pulling and pushing the code, we don't need to mention the origin_name and remote_branch_name explicitly.|
+|**Upstream**|
+|git push/pull -u/-up-stream <origin_name> <remote_branch_name>|Upstream is nothing about creation of local_tracking_branch implicitly when pulling/pushing the code. So later onwards, we don't need to mention the origin_name and remote_branch_name explicitly.|
+|**Deleting Remote Branches and Commits**|
+|git branch --delete --remotes <remote_branch_name>|Deletet remote_tracking_branch.|
+|git push <origin_name> --delete <remote_branch_name>|It will delete the remote_branch and also the remote_tracking, local_tracking and local branch in our disk. You know there is no meaning in keeping the remote_tracking_branch when the remote_branch itself is deleted.|
 
 # Git Quick Setup from GitHub
 ![ GitHub Quick Setup ](/git-quick-setup.JPG)
