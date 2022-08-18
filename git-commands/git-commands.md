@@ -101,4 +101,4 @@
 |git push <origin_name> --delete <remote_branch_name>|It will delete the remote_branch and also the remote_tracking_branch in our disk. You know there is no meaning in keeping the remote_tracking_branch when the remote_branch itself is deleted.|
 
 # Git Quick Setup from GitHub
-![ GitHub Quick Setup ](/git-quick-setup.JPG)
+![ GitHub Quick Setup ](./git-quick-setup.JPG)
