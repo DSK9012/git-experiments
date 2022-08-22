@@ -80,6 +80,7 @@
 |**Basic Commands**|
 |git branch -M <new_branch_name>|It will rename the current_branch name.|
 |git clone <remote_repo_URL>|Clone the remote repo into local disk.|
+|git clone <remote_repo_URL> .|Clone the remote repo into local disk without creating a seprate subfolder.|
 |git branch|List all local branches.|
 |git branch -a|List all local and remote branches, which includes local, local tracking and remote tracking branches only.|
 |git branch -r|List all remote tracking branches only.|
